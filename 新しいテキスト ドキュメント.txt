@@ -1,0 +1,11 @@
+# キャラクター同士の重なりをチェック
+  if s.x < character2_x + character2_width &&
+    s.x  > character2_x &&
+    s.y < character2_y + character2_height &&
+    s.y  > character2_y
+   # 重なっている場合、キャラクターの座標を調整
+   s.x -= speed
+   s.y -= speed
+
+   character2_x -= speed
+   character2_y -= speed
